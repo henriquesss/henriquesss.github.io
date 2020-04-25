@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* Clear inicial do Html */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ilumination {
+    box-shadow: grey 5px 14px 20px -4px;
+}
+
+.container {
+    margin: 0em 20% 0em 20%;
+}
+
+.section-title {
+    margin-bottom: 1em;
+}
+
+.section-description {
+    margin-bottom: 4em;
+}
+
+.cover {
+    color: #fff;
+    height: 100vh;
+    background-color: #ff6961;
+}
+
+.cover h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.cover-content {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.cover-content img {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.anchor {
+    position: absolute;
+    left: calc(50% - 11px);
+    left: -webkit-calc(50% - 11px);
+    left: -moz-calc(50% - 11px);
+    bottom: 20px;
+    transition: 0.4s;
+}
+
+.anchor img {
+    width: 40px;
+    height: 40px;
+}
+
+.anchor:hover {
+    bottom: 10px;
+}
+
+.about {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    line-height: 25px;
+    color: #fff;
+    background-color: #3C4556;
+}
+
+.projects {
+    color: #FFF;
+    height: auto;
+    background-color: #2a2c37;
+    padding: 6em 0em 6em 0em;
+}
+
+.project-description {
+    margin: 0 auto !important;
+    text-align: center;
+    padding: 2em;
+}
+
+.project-description h2 {
+    margin-bottom: 1em;
+}
+
+.project-description h3 {
+    margin-top: 2em;
+}
+
+.project-description a {
+    color: #ff6961;
+}
+
+.project-image {
+   text-align: center !important;
+   margin-bottom: 2em !important;
+}
+
+/* .blog {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    line-height: 25px;
+    color: #fff;
+    background-color: #ff6961;
+} */
+
+.contact {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    line-height: 25px;
+    color: #fff;
+    background-color: #ff6961;
+    padding: 1em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    margin-bottom: 1em;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 1em;
+}
+
+.contact-form input:focus {
+    background: #ffffff38;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.contact-form button {
+    width: 100px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    color: #f46660;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contact-form button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #f46660;
+    transition: 0.4s;
+}
+
+.contact-form textarea {
+    margin-bottom: 1em;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    padding: 1em;
+}
+
+.contact-form textarea:focus {
+    color: #fff;
+    background: #ffffff38;
+    transition: 0.3s;
+}
+
+.contact-form ::placeholder {
+    color: #fff;
+    font-family: "Montserrat";
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #3C4556;
+    height: 110px;
+}
+
+.footer a {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes reveal {
+  0% { 
+    opacity: 0;
+    transform: translate(0, -20%);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
